@@ -1,0 +1,26 @@
+<h1>Register</h1>
+
+<form>
+  <div class="input-group">
+    <span class="input-group-text">Username</span>
+    <input type="text" class="form-control" placeholder="Username" id="username" name="username" [(ngModel)]="username">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">Email</span>
+    <input type="email" class="form-control" placeholder="Your Email" id="email" name="email" [(ngModel)]="email">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">Password</span>
+    <input type="password" class="form-control" placeholder="Password" id="password" name="password" [(ngModel)]="password">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">Confirm Password</span>
+    <input type="password" class="form-control" placeholder="Confirm Password" id="passwordConfirm" name="passwordConfirm" [(ngModel)]="passwordConfirm">
+  </div>
+
+  <button class="btn btn-primary" (click)="submit()">Submit</button>
+
+</form>

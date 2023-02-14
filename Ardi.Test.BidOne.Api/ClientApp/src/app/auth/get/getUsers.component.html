@@ -1,0 +1,18 @@
+<h1 id="tableLabel">User List</h1>
+
+<p *ngIf="!users?.length"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="users.length">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usr of users">
+      <td>{{ usr.username }}</td>
+      <td>{{ usr.email }}</td>
+    </tr>
+  </tbody>
+</table>
